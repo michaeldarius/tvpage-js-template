@@ -78,7 +78,7 @@ function($, tvpage, Backbone, TVPData,
 
     _renderApplication: function() {
       app.useLayout('main', { el: '#tvpage' });
-      app.useLayout('tvpage_spots', { el: '#tvpage_spots' });
+      //app.useLayout('tvpage_spots', { el: '#tvpage_spots' });
 
       console.log(app.layouts);
 

@@ -11,7 +11,7 @@ define([
   // creation.
   var app = {
     // The root path to run the application.
-    root: "/style-coalition-app/",
+    root: "/",
     data: {},
     modules: {},
     layouts: {}
