@@ -1,0 +1,32 @@
+.tvp-canvas {
+  margin-right: 10px;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.CanvasImage {
+  position: relative;
+
+  margin-bottom: 10px;
+  width: 600px;
+  height: 320px;
+}
+
+.CanvasLogo {
+  padding:0;
+
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  background-size: contain;
+
+  width: 200px;
+  height: 160px;
+
+  background-color: rgba(255,255,255,0.4);
+}

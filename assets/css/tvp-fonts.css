@@ -1,0 +1,25 @@
+/* Load the font */
+@font-face {
+  font-family: 'tvpageregular';
+  src: url('../fonts/tvpage-regular-webfont.eot');
+  src: url('../fonts/tvpage-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/tvpage-regular-webfont.svg#tvpageregular') format('svg'),
+  url('../fonts/tvpage-regular-webfont.woff') format('woff'),
+  url('../fonts/tvpage-regular-webfont.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tvpage_arrowsregular';
+  src: url('../fonts/tvpagearrows-regular-webfont.eot');
+  src: url('../fonts/tvpagearrows-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/tvpagearrows-regular-webfont.svg#tvpage_arrowsregular') format('svg'),
+  url('../fonts/tvpagearrows-regular-webfont.woff') format('woff'),
+  url('../fonts/tvpagearrows-regular-webfont.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+
+}
