@@ -15,7 +15,6 @@ For additional documentation, check out the Wiki, where information on framework
 
 
 ### What's included
-
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
