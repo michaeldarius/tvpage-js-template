@@ -18,7 +18,7 @@ function($, TVPView) {
     className: "YoutubePlayer",
 
     afterRender: function() {
-      console.log('Load Player');
+      //console.log('Load Player');
       var THAT = this;
       window.onYouTubeIframeAPIReady = function() {
         var player = new YT.Player('YTPlayer', {
@@ -34,15 +34,15 @@ function($, TVPView) {
           events: {
             'onStateChange': function(e) {
               //t.dispatchEvent(e);
-              console.log('onStateChange', e);
+              //console.log('onStateChange', e);
             },
             'onReady': function(e) {
               THAT.player = player;
-              console.log('onReady', e);
+              //console.log('onReady', e);
             },
             'onError':function(e) {
               // nothing yet...
-              console.log('onError', e);
+              //console.log('onError', e);
             }
           }
         });

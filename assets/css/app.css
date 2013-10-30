@@ -1,0 +1,108 @@
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, "sans-serif";
+  font-size: 12px;
+  color: #444;
+}
+
+.tvp-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  border: solid 1px #000;
+}
+
+.tvp-content .list {
+  background-color: #444;
+
+  width: 300px;
+  height: 320px;
+
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.tvp-content .video-list-item .list-item-body {
+  color: #fff;
+}
+.tvp-content .video-list-item .list-item-media {
+  width: 80px;
+  height: 45px;
+}
+.tvp-content .video-list-item,
+.tvp-content .channel-list-item {
+  width: 280px;
+  padding: 10px;
+
+
+  border-top: solid 1px #666;
+  border-bottom: solid 1px #222;
+}
+
+.tvp-content .channel-list-item .list-item-media {
+  display: block;
+
+  width: 280px;
+  height: 45px;
+}
+
+.tvp-content .channel-list-item .list-item-body {
+  display: block;
+  margin-top:5px;
+
+  color: #fff;
+}
+
+.SpotRemoteSmall {
+  width: 263px;
+  height: 175px;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+
+  border: solid 1px #ddd;
+
+  color: #fff;
+  text-align: center;
+}
+
+#tvpage .tvp-spots {
+  width: 600px;
+  height: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+}
+
+.SpotOverlay {
+  width: 600px;
+  height: 320px;
+
+  -webkit-transform: translate(100%, 0px);
+  -moz-transform: translate(100%, 0px);
+  transform: translate(100%, 0px);
+}
+
+.SpotRemoteLarge {
+  width: 600px;
+  height: 320px;
+}
+
+.poster-overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px;
+
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.7);
+
+  background-color: rgba(0,0,0,0.7);
+}

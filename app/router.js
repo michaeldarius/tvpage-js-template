@@ -80,7 +80,7 @@ function($, tvpage, Backbone, TVPData,
       app.useLayout('main', { el: '#tvpage' });
       //app.useLayout('tvpage_spots', { el: '#tvpage_spots' });
 
-      console.log(app.layouts);
+      //console.log(app.layouts);
 
       app.layouts.main.setViews({
         '.tvp-player': app.modules.player.view(),
@@ -91,9 +91,9 @@ function($, tvpage, Backbone, TVPData,
 
 
 
-      app.layouts.tvpage_spots.setViews({
-        '.tvp-spots': app.modules.spots.view('spotRemote')
-      }).render();
+      //app.layouts.tvpage_spots.setViews({
+      //  '.tvp-spots': app.modules.spots.view('spotRemote')
+      //}).render();
     }
   });
 

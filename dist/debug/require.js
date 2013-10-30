@@ -17452,7 +17452,7 @@ tvpapp.define('namespace',[
   // creation.
   var app = {
     // The root path to run the application.
-    root: "/style-coalition-app/",
+    root: "/",
     data: {},
     modules: {},
     layouts: {}
@@ -18713,7 +18713,7 @@ function($, TVPView) {
     className: "YoutubePlayer",
 
     afterRender: function() {
-      console.log('Load Player');
+      //console.log('Load Player');
       var THAT = this;
       window.onYouTubeIframeAPIReady = function() {
         var player = new YT.Player('YTPlayer', {
@@ -18729,15 +18729,15 @@ function($, TVPView) {
           events: {
             'onStateChange': function(e) {
               //t.dispatchEvent(e);
-              console.log('onStateChange', e);
+              //console.log('onStateChange', e);
             },
             'onReady': function(e) {
               THAT.player = player;
-              console.log('onReady', e);
+              //console.log('onReady', e);
             },
             'onError':function(e) {
               // nothing yet...
-              console.log('onError', e);
+              //console.log('onError', e);
             }
           }
         });
@@ -18857,7 +18857,7 @@ tvpapp.define('modules/Spots/views/SpotOverlay',[
       afterRender: function() {
         this.model.on('change:videoId', function(e) {
           this.remove();
-          console.log('SpotOverlay spotCheck');
+          //console.log('SpotOverlay spotCheck');
           this._spotCheck(this.model.get('videoId'));
         }, this);
       },
@@ -19458,9 +19458,9 @@ function($, tvpage, Backbone, TVPData,
 
     _renderApplication: function() {
       app.useLayout('main', { el: '#tvpage' });
-      app.useLayout('tvpage_spots', { el: '#tvpage_spots' });
+      //app.useLayout('tvpage_spots', { el: '#tvpage_spots' });
 
-      console.log(app.layouts);
+      //console.log(app.layouts);
 
       app.layouts.main.setViews({
         '.tvp-player': app.modules.player.view(),
@@ -19471,9 +19471,9 @@ function($, tvpage, Backbone, TVPData,
 
 
 
-      app.layouts.tvpage_spots.setViews({
-        '.tvp-spots': app.modules.spots.view('spotRemote')
-      }).render();
+      //app.layouts.tvpage_spots.setViews({
+      //  '.tvp-spots': app.modules.spots.view('spotRemote')
+      //}).render();
     }
   });
 

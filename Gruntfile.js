@@ -179,12 +179,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   // TVP Tasks
-  grunt.registerTask('debug:www', [ 'clean:www', 'handlebars', 'requirejs:www', 'concat:www']);
+  grunt.registerTask('debug', [ 'clean:www', 'handlebars', 'requirejs:www', 'concat:www']);
 
-  grunt.registerTask('release:www', [ 'debug:www', 'uglify:www', 'cssmin' ]);
+  grunt.registerTask('release', [ 'debug:www', 'uglify:www', 'cssmin' ]);
 
-  grunt.registerTask('test:www', ['connect:www', 'jasmine:www']);
-
-  //TODO: LESS CSS compilation
-  //grunt.registerTask('less', ['less:player', 'watch']);
+  grunt.registerTask('test', ['connect:www', 'jasmine:www']);
 };

@@ -27,7 +27,7 @@ define([
       afterRender: function() {
         this.model.on('change:videoId', function(e) {
           this.remove();
-          console.log('SpotOverlay spotCheck');
+          //console.log('SpotOverlay spotCheck');
           this._spotCheck(this.model.get('videoId'));
         }, this);
       },
